@@ -5,6 +5,8 @@ This repository is the companion for the dataset:
  
 It contains the implementation of all the steps required in order generate our dataset, including: (i) filtering of GitHub repositories, (ii) Java repository selection, (iii) test classes identification, (iv) repository selection, and (v) local storage of test classes.
 
+Moreover it contains the quality filter script [quality_filter.py](https://github.com/MSR19-JTeC/JTeC/blob/master/python3 quality-filter.py) that cleans the dataset according to some quality criteria defined by the user.
+
 ## Dataset replication
 
 In order to replicate the dataset follow these steps:
