@@ -13,7 +13,7 @@
 	"BOOL_TS_Fork": true,
 
 	// Project's Test Suite Years Range (Values: 0,1,2,...; Unbounded: -1)
-	"MIN_TS_Year": 0,
+	"MIN_TS_Year": 1970,
 	"MAX_TS_Year": -1,
 
 	// Total Number of Project's Test Cases - Test Suite Size (Values: 0,1,2,...; Unbounded: -1)
