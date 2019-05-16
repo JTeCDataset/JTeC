@@ -6,6 +6,9 @@
 	// Create Test Suite Index (Values: true, false)
 	"BOOL_TS_Index": true,
 
+	// Select Original Projects (Values: true, false)
+	"BOOL_TS_Original": true,
+
 	// Select Fork Projects (Values: true, false)
 	"BOOL_TS_Fork": true,
 
