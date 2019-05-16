@@ -54,6 +54,7 @@ Set configuration file [config.json](https://github.com/MSR19-JTeC/JTeC/blob/mas
 
 - `BOOL_TS_Clone`: Copy Output Dataset In New Folder (Values: true, false)
 - `BOOL_TS_Index`: Create Test Suite Index (Values: true, false)
+- `BOOL_TS_Original`: Select Original Projects (Values: true, false)
 - `BOOL_TS_Fork`: Select Fork Projects (Values: true, false)
 - `MIN_TS_Year`: Lower Bound on Project's Test Suite Years Range (Values: 0,1,2,...; Unbounded: -1)
 - `MAX_TS_Year`: Upper Bound on Project's Test Suite Years Range (Values: 0,1,2,...; Unbounded: -1)
