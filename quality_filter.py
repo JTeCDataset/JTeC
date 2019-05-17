@@ -32,7 +32,7 @@ if __name__ == '__main__':
             config[k] = float("Inf")
 
     print("JTeC CONFIGURATION: ", end="")
-    print(json.dumps(config, indent=1, sort_keys=True))
+    print(json.dumps(config, indent=1))
     print()
 
     # filter projects
@@ -67,6 +67,14 @@ if __name__ == '__main__':
             file_out.write(h)
             file_out.write(JTeC_CSV)
 
+    # print JTeC summary
+    print("JTeC DATASET SUMMARY: ")
+    print(" - Number of Projects:", number_of_repo)
+    print(" - Total Number of Test Cases:", number_of_test_cases)
+    print(" - Total Number of SLOCs:", number_of_SLOCs)
+    print(" - Total Size in Bytes:", total_size)
+    print(" - Years Range:", min_year, "-", max_year)
+
     # clone JTeC
     if config["BOOL_TS_Clone"]:
         if os.path.exists(base_new_path):
@@ -80,11 +88,3 @@ if __name__ == '__main__':
                 shutil.copytree(path, new_path)
         except:
             pass
-
-    # print JTeC summary
-    print("JTeC DATASET SUMMARY: ")
-    print(" - Number of Projects:", number_of_repo)
-    print(" - Total Number of TestCases:", number_of_test_cases)
-    print(" - Total Number of SLOCs:", number_of_SLOCs)
-    print(" - Total Size in Bytes:", total_size)
-    print(" - Years Range:", min_year, "-", max_year)
