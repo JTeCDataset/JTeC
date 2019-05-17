@@ -1,7 +1,7 @@
 # JTeC: A Large Collection of Java Test Classes for Test Code Analysis and Processing [![DOI](https://zenodo.org/badge/169484455.svg)](https://zenodo.org/badge/latestdoi/169484455)
 
 This repository is the companion for the dataset: 
-> F. Corò,  R.  Verdecchia,  E.  Cruciani,  B.  Miranda,  and  A.  Bertolino, "JTeC:  A  large  collection  of  Java  test  classes  for test  code  analysisand  processing". Submitted for revision at MSR 2019 Data Showcase. [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.2558714.svg)](https://doi.org/10.5281/zenodo.2558714) 
+> F. Corò,  R.  Verdecchia,  E.  Cruciani,  B.  Miranda,  and  A.  Bertolino, "JTeC:  A  large  collection  of  Java  test  classes  for test  code  analysisand  processing". [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.2558714.svg)](https://doi.org/10.5281/zenodo.2558714) 
  
 It contains the implementation of all the steps required in order generate our dataset, including: (i) filtering of GitHub repositories, (ii) Java repository selection, (iii) test classes identification, (iv) repository selection, and (v) local storage of test classes.
 
