@@ -67,11 +67,11 @@ The final output of this script is: (i) the totality of the source code of the i
 
 ## JTeC Quality Filter
 
-JTeC provides a simple method to trim the dataset in order to make it satisfy some quality criteria, e.g., test suite size measured by number of test cases in the test suite.
-The criteria can be customized by simply changing a configuration file.
+JTeC provides a simple method to trim the dataset in order to make it satisfy some quality criteria, e.g., test suite size measured by number of test classes in each the test suite.
+The criteria can be customized by simply changing a configuration file [config.json](https://github.com/MSR19-JTeC/JTeC/blob/master/config.json).
 
-### Configuration file
-Set configuration file [config.json](https://github.com/MSR19-JTeC/JTeC/blob/master/config.json)
+### Configuration file parameters
+Customizable variables in the configuration file [config.json](https://github.com/MSR19-JTeC/JTeC/blob/master/config.json):
 
 - `BOOL_TS_Clone`: Copy Output Dataset In New Folder (Values: true, false)
 - `BOOL_TS_Index`: Create Test Suite Index (Values: true, false)
@@ -88,7 +88,7 @@ Set configuration file [config.json](https://github.com/MSR19-JTeC/JTeC/blob/mas
 
 
 ### Quality Filter Script
-After having changed the configuration file, run the quality filter script [quality_filter.py](https://github.com/MSR19-JTeC/JTeC/blob/master/python3/quality_filter.py) via `python3 quality_filter.py`
+After having customized the configuration file, run the quality filter script [quality_filter.py](https://github.com/MSR19-JTeC/JTeC/blob/master/python3/quality_filter.py) via `python3 quality_filter.py`
 
 
 ## Utility files
