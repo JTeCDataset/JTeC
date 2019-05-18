@@ -13,7 +13,7 @@ if __name__ == "__main__":
     base_url = "https://api.github.com/repositories?since="
     count = -1
     number_java_repo = 0
-    stopping_criterion = 250000
+    stopping_criterion = 50000
 
     if not os.path.isfile(repo_list):
         with open(repo_list, "w") as file_out:
