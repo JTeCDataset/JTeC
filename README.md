@@ -6,7 +6,7 @@ This repository is the companion for the dataset:
  
 It contains the implementation of all the steps required in order generate our dataset, including: (i) filtering of GitHub repositories, (ii) Java repository selection, (iii) test classes identification, (iv) repository selection, (v) local storage of test classes, and (vi) quality filtering.
 
-It also contains the quality filter script [quality_filter.py](https://github.com/JTeCDataset/JTeC/blob/master/python3/quality_filter.py) that can be used to explore and trim the dataset according to some iser-defined quality criteria.
+It also contains the quality filter script [quality_filter.py](https://github.com/JTeCDataset/JTeC/blob/master/quality_filter.py) that can be used to explore and trim the dataset according to some iser-defined quality criteria.
 
 You can cite the dataset in BibTeX via 
 ~~~
