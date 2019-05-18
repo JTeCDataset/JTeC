@@ -2,8 +2,13 @@
 
 This repository is the companion for the dataset: 
 > F. Corò,  R.  Verdecchia,  E.  Cruciani,  B.  Miranda,  and  A.  Bertolino, "JTeC:  A  large  collection  of  Java  test  classes  for test  code  analysisand  processing". [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.2878368.svg)](http://doi.org/10.5281/zenodo.2878368) 
+ 
+It contains the implementation of all the steps required in order generate our dataset, including: (i) filtering of GitHub repositories, (ii) Java repository selection, (iii) test classes identification, (iv) repository selection, and (v) local storage of test classes.
 
-Cite via ```
+Moreover it contains the quality filter script [quality_filter.py](https://github.com/MSR19-JTeC/JTeC/blob/master/python3/quality_filter.py) that cleans the dataset according to some quality criteria defined by the user.
+
+You can cite the dataset in BibTeX via 
+~~~
 @misc{coro_federico_2019_2878368,
   author       = {Corò, Federico and
                   Verdecchia, Roberto and
@@ -18,12 +23,8 @@ Cite via ```
                    https://github.com/JTeCDataset/JTeC}},
   doi          = {10.5281/zenodo.2878368},
   url          = {https://doi.org/10.5281/zenodo.2878368}
-}```
- 
-It contains the implementation of all the steps required in order generate our dataset, including: (i) filtering of GitHub repositories, (ii) Java repository selection, (iii) test classes identification, (iv) repository selection, and (v) local storage of test classes.
-
-Moreover it contains the quality filter script [quality_filter.py](https://github.com/MSR19-JTeC/JTeC/blob/master/python3/quality_filter.py) that cleans the dataset according to some quality criteria defined by the user.
-
+}
+~~~
 
 ## Dataset replication
 
