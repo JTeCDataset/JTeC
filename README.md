@@ -7,6 +7,7 @@ It contains the implementation of all the steps required in order generate our d
 
 Moreover it contains the quality filter script [quality_filter.py](https://github.com/MSR19-JTeC/JTeC/blob/master/python3/quality_filter.py) that cleans the dataset according to some quality criteria defined by the user.
 
+
 ## Dataset replication
 
 In order to replicate the dataset follow these steps:
@@ -22,6 +23,9 @@ In order to replicate the dataset follow these steps:
    
 4. Execute the script which launches in sequential order the JTeC generation steps (see Section "JTeC generation steps")
     - `sh JTeC_generator.sh`
+
+5. Run the quality filter script via `python3 quality_filter.py`
+
 
 ## JTeC generation steps
 
@@ -39,12 +43,8 @@ The final output of this script consists of a local .csv file containing the fol
 This script takes as input the list of repositories for which we want to download the test classes and create the dataset. <br>
 The final output of this script is: (i) the totality of the source code of the identified test classes, and (ii) a .csv file containing the following fields: _user_, _repository_, _id_,_fork_id_,_hash_, _date_, _n_tests_, _SLOC_, _size_
 
-## Utility files
+5. [quality_filter.py](https://github.com/MSR19-JTeC/JTeC/blob/master/quality_filter.py) - Script cleaning the raw dataset obtained after previous step. Next section describes the script more in detail.
 
-In addition to the scripts described in Section "JTeC generation steps", the dataset generation process makes use of two utility scripts and one utility file, namely:
-* [request_manager.py](https://github.com/MSR19-JTeC/JTeC/blob/master/request_manager.py) - Script managing all GitHub requests and handling possible error arising at request time, returning eventually a specific error-number to the script that first sent the request.
-* [credentials.py](https://github.com/MSR19-JTeC/JTeC/blob/master/credentials.py) - Script loading from the file `tokens.txt` the username and access tokens required to query the GitHub API.
-* [tokens.txt](https://github.com/MSR19-JTeC/JTeC/blob/master/tokens.txt) - Text file containing the GitHub username and personal GitHub access token.
 
 ## JTeC Quality Filter
 
@@ -70,3 +70,11 @@ Set configuration file [config.json](https://github.com/MSR19-JTeC/JTeC/blob/mas
 
 ### Quality Filter Script
 After having changed the configuration file, run the quality filter script [quality_filter.py](https://github.com/MSR19-JTeC/JTeC/blob/master/python3/quality_filter.py) via `python3 quality_filter.py`
+
+
+## Utility files
+
+In addition to the scripts described in Section "JTeC generation steps", the dataset generation process makes use of two utility scripts and one utility file, namely:
+* [request_manager.py](https://github.com/MSR19-JTeC/JTeC/blob/master/request_manager.py) - Script managing all GitHub requests and handling possible error arising at request time, returning eventually a specific error-number to the script that first sent the request.
+* [credentials.py](https://github.com/MSR19-JTeC/JTeC/blob/master/credentials.py) - Script loading from the file `tokens.txt` the username and access tokens required to query the GitHub API.
+* [tokens.txt](https://github.com/MSR19-JTeC/JTeC/blob/master/tokens.txt) - Text file containing the GitHub username and personal GitHub access token.
