@@ -31,7 +31,7 @@ You can cite the dataset in BibTeX via
 In order to replicate the dataset follow these steps:
 
 1. Clone the repository 
-   - `git clone https://github.com/MSR19-JTeC/JTeC`
+   - `git clone https://github.com/JTeCDataset/JTeC`
  
 2. Make sure to satisfy the following requirements:
     * Have Python 3.0+ installed
