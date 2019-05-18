@@ -77,13 +77,13 @@ Customizable variables in the configuration file [config.json](https://github.co
 - `BOOL_TS_Index`: Create Test Suite Index (Values: true, false)
 - `BOOL_TS_Original`: Select Original Projects (Values: true, false)
 - `BOOL_TS_Fork`: Select Fork Projects (Values: true, false)
-- `MIN_TS_Year`: Lower Bound on Project's Test Suite Years Range (Values: 0,1,2,...; Unbounded: -1)
+- `MIN_TS_Year`: Lower Bound on Project's Test Suite Years Range (Values: 0,1,2,...)
 - `MAX_TS_Year`: Upper Bound on Project's Test Suite Years Range (Values: 0,1,2,...; Unbounded: -1)
-- `MIN_TS_Size`: Lower Bound on Total Number of Project's Test Cases - Test Suite Size (Values: 0,1,2,...; Unbounded: -1)
+- `MIN_TS_Size`: Lower Bound on Total Number of Project's Test Cases - Test Suite Size (Values: 0,1,2,...)
 - `MAX_TS_Size`: Upper Bound on Total Number of Project's Test Cases - Test Suite Size (Values: 0,1,2,...; Unbounded: -1)
-- `MIN_TS_SLOCs`: Lower Bound on Total Number of SLOCs of Project's Test Suite (Values: 0,1,2,...; Unbounded: -1)
+- `MIN_TS_SLOCs`: Lower Bound on Total Number of SLOCs of Project's Test Suite (Values: 0,1,2,...)
 - `MAX_TS_SLOCs`: Upper Bound on Total Number of SLOCs of Project's Test Suite (Values: 0,1,2,...; Unbounded: -1)
-- `MIN_TS_Bytes`: Lower Bound on Total Number of Bytes of Project's Test Suite (Values: 0,1,2,...; Unbounded: -1)	
+- `MIN_TS_Bytes`: Lower Bound on Total Number of Bytes of Project's Test Suite (Values: 0,1,2,...)	
 - `MAX_TS_Bytes`: Upper Bound on Total Number of Bytes of Project's Test Suite (Values: 0,1,2,...; Unbounded: -1)
 
 
