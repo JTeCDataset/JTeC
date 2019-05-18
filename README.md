@@ -42,7 +42,8 @@ In order to replicate the dataset follow these steps:
 4. Execute the script which launches in sequential order the JTeC generation steps (see Section "JTeC generation steps")
     - `sh JTeC_generator.sh`
 
-5. Run the quality filter script via `python3 quality_filter.py`
+5. Run the quality filter script
+    - `python3 quality_filter.py`
 
 
 ## JTeC generation steps
