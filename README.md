@@ -55,7 +55,7 @@ The steps required in order to generate the dataset are implemented in the follo
 2. [selection_test_count.py](https://github.com/MSR19-JTeC/JTeC/blob/master/selection_test_count.py) - Script selecting Java repositories (Step 2) and identifying test classes of the selected repositories (Step 3). This script takes as parameter the programming language to be considered for the generation of the dataset, e.g. `selection_test_count.py Java`.<br>
 The final output of this script consists of a local .csv file containing the following information: _user_, _repository_, _id_, _hash_, _date_, _n_tests_, _fork_id_.
 
-3. [select.py](https://github.com/MSR19-JTeC/JTeC/blob/master/selection_test_count.py) - Script selecting among each forked project either the original or forked project according to which one contains more test classes (Step 4). <br>
+3. [select.py](https://github.com/MSR19-JTeC/JTeC/blob/master/select.py) - Script selecting among each forked project either the original or forked project according to which one contains more test classes (Step 4). <br>
 The final output of this script consists of a local .csv file containing the following information: _user_, _repository_, _id_, _hash_, _date_, _n_tests_, _fork_id_.
 
 4. [download_tests.py](https://github.com/MSR19-JTeC/JTeC/blob/master/download_tests.py) - Script downloading the test classes of the repositories selected by `select.py` (Step 5). <br>
