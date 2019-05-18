@@ -5,7 +5,7 @@ This repository is the companion for the dataset:
  
 It contains the implementation of all the steps required in order generate our dataset, including: (i) filtering of GitHub repositories, (ii) Java repository selection, (iii) test classes identification, (iv) repository selection, (v) local storage of test classes, and (vi) quality filtering.
 
-It also contains the quality filter script [quality_filter.py](https://github.com/MSR19-JTeC/JTeC/blob/master/python3/quality_filter.py) that can be used to explore and trim the dataset according to some iser-defined quality criteria.
+It also contains the quality filter script [quality_filter.py](https://github.com/JTeCDataset/JTeC/blob/master/python3/quality_filter.py) that can be used to explore and trim the dataset according to some iser-defined quality criteria.
 
 You can cite the dataset in BibTeX via 
 ~~~
@@ -50,28 +50,28 @@ In order to replicate the dataset follow these steps:
 
 The steps required in order to generate the dataset are implemented in the following 4 scripts, which have to be executed sequentially in the order given below. A brief description of the scripts is provided below:
 
-1. [repository_filtering.py](https://github.com/MSR19-JTeC/JTeC/blob/master/repository_filtering.py) - Script generating an index of GitHub public repositories (Step 1). <br> The final output of this script consists of a local .csv file containing for each public repository indexed the following fields: _repositoryID_, _username of repository creator_, _name of the repository_, and _programming languages associated to the repository_
+1. [repository_filtering.py](https://github.com/JTeCDataset/JTeC/blob/master/repository_filtering.py) - Script generating an index of GitHub public repositories (Step 1). <br> The final output of this script consists of a local .csv file containing for each public repository indexed the following fields: _repositoryID_, _username of repository creator_, _name of the repository_, and _programming languages associated to the repository_
 
-2. [selection_test_count.py](https://github.com/MSR19-JTeC/JTeC/blob/master/selection_test_count.py) - Script selecting Java repositories (Step 2) and identifying test classes of the selected repositories (Step 3). This script takes as parameter the programming language to be considered for the generation of the dataset, e.g. `selection_test_count.py Java`.<br>
+2. [selection_test_count.py](https://github.com/JTeCDataset/JTeC/blob/master/selection_test_count.py) - Script selecting Java repositories (Step 2) and identifying test classes of the selected repositories (Step 3). This script takes as parameter the programming language to be considered for the generation of the dataset, e.g. `selection_test_count.py Java`.<br>
 The final output of this script consists of a local .csv file containing the following information: _user_, _repository_, _id_, _hash_, _date_, _n_tests_, _fork_id_.
 
-3. [select.py](https://github.com/MSR19-JTeC/JTeC/blob/master/select.py) - Script selecting among each forked project either the original or forked project according to which one contains more test classes (Step 4). <br>
+3. [select.py](https://github.com/JTeCDataset/JTeC/blob/master/select.py) - Script selecting among each forked project either the original or forked project according to which one contains more test classes (Step 4). <br>
 The final output of this script consists of a local .csv file containing the following information: _user_, _repository_, _id_, _hash_, _date_, _n_tests_, _fork_id_.
 
-4. [download_tests.py](https://github.com/MSR19-JTeC/JTeC/blob/master/download_tests.py) - Script downloading the test classes of the repositories selected by `select.py` (Step 5). <br>
+4. [download_tests.py](https://github.com/JTeCDataset/JTeC/blob/master/download_tests.py) - Script downloading the test classes of the repositories selected by `select.py` (Step 5). <br>
 This script takes as input the list of repositories for which we want to download the test classes and create the dataset. <br>
 The final output of this script is: (i) the totality of the source code of the identified test classes, and (ii) a .csv file containing the following fields: _user_, _repository_, _id_,_fork_id_,_hash_, _date_, _n_tests_, _SLOC_, _size_
 
-5. [quality_filter.py](https://github.com/MSR19-JTeC/JTeC/blob/master/quality_filter.py) - Script cleaning the raw dataset obtained after previous step. Next section describes the script more in detail.
+5. [quality_filter.py](https://github.com/JTeCDataset/JTeC/blob/master/quality_filter.py) - Script cleaning the raw dataset obtained after previous step. Next section describes the script more in detail.
 
 
 ## JTeC Quality Filter
 
 JTeC provides a simple method to trim the dataset in order to make it satisfy some quality criteria, e.g., test suite size measured by number of test classes in each the test suite.
-The criteria can be customized by simply changing a configuration file [config.json](https://github.com/MSR19-JTeC/JTeC/blob/master/config.json).
+The criteria can be customized by simply changing a configuration file [config.json](https://github.com/JTeCDataset/JTeC/blob/master/config.json).
 
 ### Configuration file parameters
-Customizable variables in the configuration file [config.json](https://github.com/MSR19-JTeC/JTeC/blob/master/config.json):
+Customizable variables in the configuration file [config.json](https://github.com/JTeCDataset/JTeC/blob/master/config.json):
 
 - `BOOL_TS_Clone`: Copy Output Dataset In New Folder (Values: true, false)
 - `BOOL_TS_Index`: Create Test Suite Index (Values: true, false)
@@ -88,12 +88,12 @@ Customizable variables in the configuration file [config.json](https://github.co
 
 
 ### Quality Filter Script
-After having customized the configuration file, run the quality filter script [quality_filter.py](https://github.com/MSR19-JTeC/JTeC/blob/master/python3/quality_filter.py) via `python3 quality_filter.py`
+After having customized the configuration file, run the quality filter script [quality_filter.py](https://github.com/JTeCDataset/JTeC/blob/master/python3/quality_filter.py) via `python3 quality_filter.py`
 
 
 ## Utility files
 
 In addition to the scripts described in Section "JTeC generation steps", the dataset generation process makes use of two utility scripts and one utility file, namely:
-* [request_manager.py](https://github.com/MSR19-JTeC/JTeC/blob/master/request_manager.py) - Script managing all GitHub requests and handling possible error arising at request time, returning eventually a specific error-number to the script that first sent the request.
-* [credentials.py](https://github.com/MSR19-JTeC/JTeC/blob/master/credentials.py) - Script loading from the file `tokens.txt` the username and access tokens required to query the GitHub API.
-* [tokens.txt](https://github.com/MSR19-JTeC/JTeC/blob/master/tokens.txt) - Text file containing the GitHub username and personal GitHub access token.
+* [request_manager.py](https://github.com/JTeCDataset/JTeC/blob/master/request_manager.py) - Script managing all GitHub requests and handling possible error arising at request time, returning eventually a specific error-number to the script that first sent the request.
+* [credentials.py](https://github.com/JTeCDataset/JTeC/blob/master/credentials.py) - Script loading from the file `tokens.txt` the username and access tokens required to query the GitHub API.
+* [tokens.txt](https://github.com/JTeCDataset/JTeC/blob/master/tokens.txt) - Text file containing the GitHub username and personal GitHub access token.
