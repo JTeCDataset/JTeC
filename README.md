@@ -22,8 +22,8 @@ You can cite the dataset in BibTeX via
   year         = 2019,
   note         = {{Companion page for the JTeC dataset at 
                    https://github.com/JTeCDataset/JTeC}},
-  doi          = {10.5281/zenodo.2878368},
-  url          = {https://doi.org/10.5281/zenodo.2878368}
+  doi          = {10.5281/zenodo.3711509},
+  url          = {https://doi.org/10.5281/zenodo.3711509}
 }
 ~~~
 
