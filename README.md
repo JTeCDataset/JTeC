@@ -10,7 +10,7 @@ It also contains the quality filter script [quality_filter.py](https://github.co
 
 You can cite the dataset in BibTeX via 
 ~~~
-@misc{coro_federico_2019_2878368,
+@misc{JTeC2019,
   author       = {Corò, Federico and
                   Verdecchia, Roberto and
                   Cruciani, Emilio and
